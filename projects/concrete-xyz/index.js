@@ -26,7 +26,7 @@ const tvl = async (api) => {
   for (let i = 0; i < vaults.length; i++) {
     api.add(assets[i], totalAssets[i])
   }
-} 
+}
 
 const chains = ['ethereum', 'berachain', 'arbitrum', 'katana', 'stable']
 chains.forEach((chain) => {

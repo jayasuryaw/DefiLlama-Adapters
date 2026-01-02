@@ -84,7 +84,7 @@ const fixBalancesTokens = {
   },
   stable: {
     '0x779Ded0c9e1022225f8E0630b35a9b54bE713736': { coingeckoId: 'usdt0', decimals: 6 },
-    '0x0000000000000000000000000000000000001003': { coingeckoId: 'usdt0', decimals: 18 },
+    '0x0000000000000000000000000000000000001003': { coingeckoId: 'stable-2', decimals: 18 },
   },
   gan: {
     '0x0000000000000000000000000000000000000000': { coingeckoId: 'gpunet', decimals: 18 },
@@ -96,6 +96,10 @@ const fixBalancesTokens = {
   btnx: {
     '0x0000000000000000000000000000000000000000': { coingeckoId: 'botanix-pegged-bitcoin', decimals: 18 },
   },
+  megaeth: {
+    '0x4200000000000000000000000000000000000006': { coingeckoId: 'ethereum', decimals: 18 },
+    '0x28B7E77f82B25B95953825F1E3eA0E36c1c29861': { coingeckoId: 'megaeth', decimals: 18 },
+  }
 }
 
 ibcChains.forEach(chain => fixBalancesTokens[chain] = { ...ibcMappings, ...(fixBalancesTokens[chain] || {}) })
